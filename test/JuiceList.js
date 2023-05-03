@@ -1,12 +1,12 @@
 
 class JuiceList{
    
-async clickAppleJuice()    
+    async clickJuice(text)    
 {
-let element = await web.$('//div[text()=" Apple Juice (1000ml) "]');
-await element.isDisplayed();
-await element.click();
-await browser.pause(2000);
+    let element = await $(`//div[text()="${text}"]`);
+    await element.isDisplayed();
+    await element.click();
+    await browser.pause(2000);
 
 }
     
