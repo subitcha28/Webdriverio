@@ -24,7 +24,10 @@ export const config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        'specs/sampleSpec.js'
+        // 'specs/sampleSpec.js',
+           'specs/DropDown.js'
+        
+
 
     ],
     // Patterns to exclude.
@@ -47,7 +50,7 @@ export const config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -224,8 +227,11 @@ export const config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    // beforeTest: function (test, context) {
-    // },
+    beforeTest: function (test, context) {
+        const chai = import("chai");
+        global.chaiexpect = chai.expect;
+        global.chaiassert = chai.assert;
+    }
     /**
      * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
      * beforeEach in Mocha)

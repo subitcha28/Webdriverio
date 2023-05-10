@@ -24,6 +24,9 @@
     "webdriverio": "^8.3.10"
   },
   "dependencies": {
-    "chai": "^4.3.7"
+    "chai": "^4.3.7",
+    "expect": "^29.5.0",
+    "expect-webdriverio": "^4.2.3",
+    "expect.js": "^0.3.1"
   }
 }

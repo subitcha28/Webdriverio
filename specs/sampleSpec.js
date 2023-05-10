@@ -14,7 +14,7 @@ describe("Function to summ the values", async () => {
   });
 
   it("Click on the dismiss button in the popup", async()=>{
-    await CommonMethods.clickButton("Dismiss");
+    await CommonMethods.clickDismiss("Dismiss");
   })
 
   it("verify juice list names", async()=>{

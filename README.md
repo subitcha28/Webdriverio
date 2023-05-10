@@ -15,3 +15,17 @@ to accept the alert
 use browser.accceptAlert()
 ------------
 browser.getwindowHandles() -> will return the all the window name in the browser
+
+switchtoWindow- deals with browser open by application
+switchWindow-browser opened by automation
+
+----------
+using IFrame
+use keyword => browser.switchToFrame(await $(xpath))
+to come out of IFRAME => use browser.switchToFrame(null)
+
+-------
+Alure reports used to genertae reports
+to install this use command npm install @wdio/allure-reporter --sav-dev
+Then have to set config in wdio.conf file -> refer wdio docs
+--------
