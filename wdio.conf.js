@@ -25,7 +25,11 @@ export const config = {
     specs: [
         // ToDo: define location for spec files here
         // 'specs/sampleSpec.js',
-           'specs/DropDown.js'
+          // 'specs/DropDown.js',
+        //   'specs/WindowValidation.js',
+        //   'specs/LoginPage.js',
+          'specs/AddProducts.js'
+
         
 
 

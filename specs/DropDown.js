@@ -15,10 +15,10 @@ describe("Handling Dropdown , RadioButton,", async () => {
         await browser.pause(2000);
         })
 
-        it("click on DropDown and select the value", async () => {
-            await HandleDropDown.clickDropDown("Option1");
-            await browser.pause(2000);
-            })
+    it("click on DropDown and select the value", async () => {
+        await HandleDropDown.clickDropDown("Option1");
+        await browser.pause(2000);
+     })
 
     
 
